@@ -15,7 +15,10 @@ public class WhishList{
         list.add(product);
     }
 
-
+    public void setList(List<String> list)
+    {
+        this.list=list;
+    }
     public void removeProduct(String product){
         list.remove(product);
     }
