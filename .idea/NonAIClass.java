@@ -6,7 +6,7 @@ public class WhishList{
     private String id;
     private List<String> list =  new ArrayList<>();
 
-    WhishList(String name,String id){
+   public WhishList(String name,String id){
         this.name=name;
         this.id=id;
     }
@@ -26,8 +26,10 @@ public class WhishList{
     public void available(String product){
         for(String s: list){
             if(s.equals(product)){// Here we check if the product is still available
-
+                System.out.println(product);
             }
+            else
+                System.out.println("Not available");
         }
     }
 
